@@ -1,6 +1,6 @@
 package com.example.demo.service;
-import com.example.demo.entity.Studentity;
+import com.example.demo.entity.Stuentity;
 public interface StudentService{
 
-    Studentity saveStudent(Studentity student);
+    Stuentity saveStudent(Stuentity student);
 }
