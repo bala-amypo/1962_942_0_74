@@ -1,6 +1,6 @@
 package com.example.demo.Serviceimpl;
 import org.springframework.sterotype.Service;
-import com.example.demo.entity.Student;
+import com.example.demo.entity.Studentity;
 import com.example.demo.service.StudentService;
 @Service
 public class StudentServiceimpl implements StudentService{
@@ -8,6 +8,6 @@ public class StudentServiceimpl implements StudentService{
     public StudentServiceimpl(StudentRepository studentRepository){
         this.studentRepository=studentRepository;
     }
-public Student saveStudent (Student student){
+public Studentity saveStudent (Studentity student){
     return studentRepository.save(student);
 }

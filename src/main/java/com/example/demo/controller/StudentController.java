@@ -3,7 +3,7 @@ package com.example.demo.controller;
 
 
 
-import com.example.demo.entity.Student;
+import com.example.demo.entity.Studentity;
 import com.example.demo.service.StudentService;
 
 
@@ -12,7 +12,7 @@ public class StudentController{
     @Autowired
     StudentService studentService;
     @PostMapping("/pastdata")
-    public Student postdata(@RequestBody Student student){
+    public Studentity postdata(@RequestBody Studentity student){
         return studentService.saveStudent(student);
     }
 
