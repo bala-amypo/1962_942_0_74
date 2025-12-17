@@ -5,6 +5,9 @@ import com.example.demo.service.StudentService;
 @Service
 public class StudentServiceimpl implements StudentService{
     private final StudentRepository studentRepository;
+    public StudentServiceimpl(StudentRepository studentRepository){
+        this.studentRepository=studentRepository;
+    }
 public Student saveStudent (Student student){
     return
 }
