@@ -3,7 +3,8 @@ package com.example.demo.controller;
 
 
 
-
+import com.example.demo.entity.Student;
+import com.example.demo.service.StudentService;
 
 
 @RestController
