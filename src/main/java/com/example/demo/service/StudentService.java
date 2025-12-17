@@ -1,2 +1,4 @@
 package com.example.demo.service;
-import org.springframework.sterotype 
+public interface StudentService{
+    
+}
