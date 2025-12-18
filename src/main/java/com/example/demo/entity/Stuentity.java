@@ -6,9 +6,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Student{
+public class Stuentity{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
@@ -41,14 +41,14 @@ public class Student{
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
     }
-    public Student(Long id,String name,String email,float cgpa){
+    public Stuentity(Long id,String name,String email,float cgpa){
         this.id=id;
         this.name=name;
         this.email=email;
         this.cgpa=cgpa;
 
     }
-    public Student(){
-        
+    public Stuentity(){
+
     }
 }

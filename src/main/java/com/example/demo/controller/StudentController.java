@@ -5,19 +5,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.entity.Student;
+import com.example.demo.entity.Stuentity;
 import com.example.demo.service.StudentService;
 
 @RestController
 public class StudentController {
+
     @Autowired
-    StudentService studentService;
+    StudentService studentservice;
 
     @PostMapping("/postdata")
-    public Student postdata(@RequestBody Student student){
-        return studentService.saveStudent(student);
+    public Stuentity postdata(@RequestBody Stuentity student) {
+        return studentservice.saveStudent(student);
     }
-    
-    
-
 }
